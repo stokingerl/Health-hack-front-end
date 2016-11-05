@@ -1,7 +1,8 @@
 (function() {
-    var app = angular.module('webApp',[]);
+    var app = angular.module('routerApp');
 
     app.controller('homeController', function($scope) {
-        $scope.text = "Hello World!";
+        var vm = this;
+        vm.text = "Hello World!";
     });
 })();
