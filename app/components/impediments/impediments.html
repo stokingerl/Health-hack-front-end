@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="text-center">{{vm.constants.headerText}}</div>
+    <div class="row">
+        <button ng-repeat="button in vm.buttons" class="col-xs-4 btn btn-default" ng-class="{'active':button.active}" ng-click="vm.setActiveVal(button)">
+            {{button.val}}
+        </button>
+    </div>
+</div>
