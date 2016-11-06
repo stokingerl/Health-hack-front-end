@@ -6,32 +6,36 @@
         categoryInfo:
         [
             {
-                name: 'Pete',
+                blue: true,
+                purple: false,
+                green: false,
                 icon: "fa fa-circle",
                 options: [
-                    "do something",
-                    "another thing",
-                    "one more"
+                    "Diet - Eat a low salt diet at home",
+                    "Exercise - Walk an additional 10 minutes in your day",
+                    "Stress - Regular breathing exercises"
                 ]
             },
             {
-                name: 'Sucks',
+                blue: false,
+                purple: false,
+                green: true,
                 icon: "fa fa-square",
                 options: [
-                    "option",
-                    "another one",
-                    "yet another one",
-                    "one more"
+                    "Diet - Increase potassium in your daily intake",
+                    "Exercise - 15 minutes of moderate physical activity",
+                    "Stress - Regular positive self-coaching/self-talk"
                 ]
             },
             {
-                name: 'Eggs',
+                blue: false,
+                purple: true,
+                green: false,
                 icon: "fa fa-diamond",
                 options: [
-                    "eggs",
-                    "cheese",
-                    "yogurt",
-                    "splenda"
+                    "Diet - Eat small portions every three to four hours",
+                    "Exercise - 30 minutes of vigorous physical activity",
+                    "Stress - Regular 10 minute meditation breaks"
                 ]
             },
         ]
