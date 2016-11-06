@@ -1,59 +1,95 @@
-<div class="container">
+<style>
+    input[type=checkbox] {
+        transform: scale(1.9);
+    }
+    .list-group-item{
+    	border:none;
+    }
+
+    .list-group-item label{
+    	line-height: 1.6;
+    }
+    input[type=checkbox] {
+    	margin:10px;
+    }
+    .form-inline{
+    	margin-bottom:30px;
+    }
+
+    .form-inline input{
+    	height:60px;
+    	font-size:1em;
+    }
+    .flex-container{
+    	background-color:white;
+    	padding: 0px 100px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    }
+    .make-it-blue, .make-it-blue li{
+    	background-color:#eef7fa;
+    }
+    .navbar{
+    	margin-bottom:0px;
+    }
+    body{background-color:#eef7fa;}
+</style>
+<div class="flex-container">
     <div class="row">
-        <div>
-            <img class="img-responsive img-circle" style='margin-left: 130px; ' src="http://www.lifenews.com/wp-content/uploads/2016/01/laurenrhoda.png"/>
-        </div>
         <div class='life-goal-section'>
-            <div>
+            <div style="margin-bottom:45px">
                 {{vm.constants.lifeGoal}}
             </div>
-            <div  style='margin-top: 20px;'>
-                {{vm.constants.concreteGoal}}
+            <div>
+            	<img class="img-responsive img-circle" style='margin-left: 130px; ' src="app/components/home/LAUREN.png"/>
+        	</div>
+            <div  style='margin-top: 50px;'>
+                Outcome: {{vm.constants.concreteGoal}}
             </div>
         </div>
     </div>
-    <div>
 
     </div>
-    <div class="row">
-      <span class='macro-goal-section'>
-        <strong>{{vm.constants.microLabel}}</strong>
+   <div class="flex-container make-it-blue">
+    <div class='macro-goal-section'>
+      <span>
+        {{vm.constants.microLabel}}
       </span>
         <hr/>
         <ul class="list-group">
             <li ng-repeat="actionText in vm.constants.actionText" class="list-group-item">
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                        {{actionText}}
-                    </label>
-                </div>
+                <div class="input-group input-group-lg">
+                      <span class="input-group-addon">
+                          <input type="checkbox" aria-label="...">
+                      </span>
+                      <label style="font-size:35px;line-height:1.6;height:85px;" type="text" class="form-control" aria-label="...">{{actionText}}</label>
+                    </div>
             </li>
         </ul>
     </div>
-    <div class="row">
+    </div>
+    <div class="flex-container make-it-blue">
+    <div class="macro-goal-section" style="width:100%">
         <strong>{{vm.constants.todayText}}</strong>
         <hr/>
         <form class="form-inline">
             <div class="form-group">
-                <label for="bpVal">{{vm.constants.bpLabel}}</label>
+                <label for="bpVal">{{vm.constants.bpLabel}}</label><br>
                 <input type="text" class="form-control" id="bpVal"></input>
             </div>
         </form>
         <form class="form-inline">
             <div class="form-group">
-                <label for="weightVal">{{vm.constants.weightLabel}}</label>
+                <label for="weightVal">{{vm.constants.weightLabel}}</label><br>
                 <input type="text" class="form-control" id="weightVal"></input>
             </div>
         </form>
-        <form class="form-inline">
-            <div class="form-group">
-                <label for="moodVal">{{vm.constants.moodLabel}}</label>
-                <input type="range" min="1" max="100" class="form-control" id="moodVal"></input>
-            </div>
-        </form>
+        
+    </div>
     </div>
     <div class="text-center">
-        <button class="btn btn-default">Next</button>
+        <button style="width:80%;height:90px;font-size:40px;font-weight:bold;" class="btn btn-primary">Check your progress</button>
     </div>
 </div>
