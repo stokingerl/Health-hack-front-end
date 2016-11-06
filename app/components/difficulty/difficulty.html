@@ -1,21 +1,26 @@
+<style>
+    input[type=checkbox] {
+        transform: scale(1.7);
+    }
+</style>
 <div>
-    <h1 style="font-size:40px;" class="text-center">{{vm.constants.headerText}}</h1>
+    <h1 style="font-size:3.7em;margin-bottom:30px;" class="text-center">{{vm.constants.headerText}}</h1>
     <ul class="list-group">
         <li ng-repeat="category in vm.constants.categoryInfo" class="list-group-item">
-            <div style="text-align:center;font-size:40px;"><i ng-class="category.icon" aria-hidden="true"></i> {{category.name}}</div>
+            <div style="text-align:center;font-size:50px;background-color:#337ab7;color:white;"><i ng-class="category.icon" aria-hidden="true"></i> {{category.name}}</div>
             <ul class="list-group">
                 <li ng-repeat="option in category.options" class="list-group-item">
-                    <div class="form-check">
-                        <label style="font-size:30px;font-weight:normal;" class="form-check-label">
-                            <input type="checkbox" class="form-check-input">
-                            {{option}}
-                        </label>
+                    <div class="input-group input-group-lg">
+                      <span class="input-group-addon">
+                          <input type="checkbox" aria-label="...">
+                      </span>
+                      <label style="font-size:40px;line-height:0.9;height:75px;" type="text" class="form-control" aria-label="...">{{option}}</label>
                     </div>
                 </li>
             </ul>
         </li>
     </ul>
     <div class="text-center">
-        <button class="btn btn-default">Next</button>
+        <button style="width:80%;height:90px;font-size:40px;font-weight:bold;" class="btn btn-primary">Next</button>
     </div>
 </div>
