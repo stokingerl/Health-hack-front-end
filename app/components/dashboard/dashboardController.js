@@ -43,9 +43,8 @@
         	[186,206,191,189,201,183,192,207,180,192,171,186,186,171,183,172,179,157,170,170,162,170,170,163,159,127,131,128,124,115,137,119,125,117],
         	[118,105,115,113,113,118,119,108,117,99,102,99,97,102,98,96,97,93,96,95,90,89,92,90,89,89,87,90,88,87,89,88,80,82]
         ];
-        vm.override = [{fill:false, borderWidth: 3, borderJoinStyle:"round", pointBorderColor:'rgb(200,200,255)'}, {fill:false}];
+        vm.override = [{fill:false, borderWidth: 3, borderJoinStyle:"round", pointBorderColor:'rgb(200,200,255)'}, {fill:false, borderWidth:3, pointBorderColor:'rgb(200,200,255)'}];
         vm.options = {
-        	label:"Baby butt",
         	scales: {
         		yAxes:[{
         			ticks:{
