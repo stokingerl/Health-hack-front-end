@@ -2,14 +2,26 @@
 .question textarea{
 	font-size:3em;
 }
+
+.chartTitle{
+	display:flex;
+	justify-content:center;
+}
 </style>
 
-<div>
-	<canvas id="myChart" class="chart chart-line" chart-data="vm.data" chart-labels="vm.labels" chart-options="vm.options" chart-dataset-override="vm.override" width="980" height="600"></canvas>
+<div class="chartTitle">
+	<h1>Blood Pressure</h1>
 </div>
 
+<div style="margin-bottom:30px">
+	<canvas id="myChart" class="chart chart-line" chart-data="vm.data" chart-labels="vm.labels" chart-options="vm.options" chart-series="vm.series" chart-dataset-override="vm.override" width="980" height="600"></canvas>
+</div>
+
+<div class="chartTitle">
+	<h1>Weight</h1>
+</div>
 <div>
-	<canvas id="mySecondChart" class="chart chart-line" chart-data="vm.secondData" chart-labels="vm.secondLabels" chart-options="vm.secondOptions" chart-dataset-override="vm.secondOverride" width="980" height="600"></canvas>
+	<canvas id="mySecondChart" class="chart chart-bar" chart-data="vm.secondData" chart-labels="vm.secondLabels" chart-options="vm.secondOptions" chart-series="vm.secondSeries" chart-dataset-override="vm.secondOverride" width="980" height="600"></canvas>
 </div>
 
 <div class="question col-xs-12">
