@@ -4,9 +4,9 @@
     var constants = {
         lifeGoal: "\"I want to be able to dance with my daughter at her wedding.\"",
         macroLabel: "Macro Goal",
-        concreteGoal: "Lose 20 pounds",
+        concreteGoal: "Lower Blood Pressure",
         microLabel: "Micro Goals",
-        actionText: ["Run for 15 minutes","Meditate"],
+        actionText: ["Monitor Blood Pressure","Monitor Diet"],
         todayText: "Today",
         bpLabel: "Blood pressure:",
         weightLabel: "Weight:",
