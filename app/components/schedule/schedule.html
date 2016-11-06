@@ -6,6 +6,7 @@
  	justify-content:center;
  	border: 1px solid #e4e5e5;
  	border-radius: 5px;
+    font-size: 50px;
  	width:100%;
  }
  .button-container{
@@ -13,18 +14,25 @@
  	justify-content:center;
  }
  .button.selected{
- 	background-color:green;
+ 	background-color:lightblue;
  }
 </style>
 <div>
-<h1>WHEN?</h1>
+<div style="font-size:4.2em;padding-bottom:65px;" class="text-center">What days work for you?</div>
 </div>
-<div class="col-xs-12 button-container">
-  <div class="button" ng-class="{'selected': vm.monday}" ng-click="vm.monday = !vm.monday">M</div>
-  <div class="button" ng-class="{'selected': vm.tuesday}" ng-click="vm.tuesday = !vm.tuesday">T</div>
-  <div class="button" ng-class="{'selected': vm.wednesday}" ng-click="vm.wednesday = !vm.wednesday">W</div>
-  <div class="button" ng-class="{'selected': vm.thursday}" ng-click="vm.thursday = !vm.thursday">Th</div>
-  <div class="button" ng-class="{'selected': vm.friday}" ng-click="vm.friday = !vm.friday">F</div>
-  <div class="button" ng-class="{'selected': vm.saturday}" ng-click="vm.saturday = !vm.saturday">S</div>
-  <div class="button" ng-class="{'selected': vm.sunday}" ng-click="vm.sunday = !vm.sunday">Su</div>
+<div>
+    <div style="padding-bottom: 65px;">
+        <ul class="list-group">
+            <li class="button" ng-class="{'selected': vm.monday}" ng-click="vm.monday = !vm.monday" class="list-group-item">Monday</li>
+            <li class="button" ng-class="{'selected': vm.tuesday}" ng-click="vm.tuesday = !vm.tuesday" class="list-group-item">Tuesday</li>
+            <li class="button" ng-class="{'selected': vm.wednesday}" ng-click="vm.wednesday = !vm.wednesday" class="list-group-item">Wednesday</li>
+            <li class="button" ng-class="{'selected': vm.thursday}" ng-click="vm.thursday = !vm.thursday" class="list-group-item">Thursday</li>
+            <li class="button" ng-class="{'selected': vm.friday}" ng-click="vm.friday = !vm.friday" class="list-group-item">Friday</li>
+            <li class="button" ng-class="{'selected': vm.saturday}" ng-click="vm.saturday = !vm.saturday" class="list-group-item">Saturday</li>
+            <li class="button" ng-class="{'selected': vm.sunday}" ng-click="vm.sunday = !vm.sunday" class="list-group-item">Sunday</li>
+        </ul>
+    </div>
+    <div class="text-center">
+        <button style="width:80%;height:90px;font-size:40px;font-weight:bold;" ui-sref="home" class="btn btn-primary">Next</button>
+    </div>
 </div>
