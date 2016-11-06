@@ -2,13 +2,15 @@
     var app = angular.module('routerApp');
 
     var constants = {
-        lifeGoal: "\"I want to be able to dance at my daughter's wedding.\"",
+        lifeGoal: "\"I want to be able to dance with my daughter at her wedding.\"",
+        macroLabel: "Macro Goal",
         concreteGoal: "Lose 20 pounds",
-        actionText: "Run for 15 minutes",
-        moodText: "How are you feeling today?",
+        microLabel: "Micro Goals",
+        actionText: ["Run for 15 minutes","Meditate"],
         todayText: "Today",
         bpLabel: "Blood pressure:",
-        weightLabel: "Weight:"
+        weightLabel: "Weight:",
+        moodLabel: "How are you feeling today?"
     }
 
     app.controller('homeController', function($scope) {
