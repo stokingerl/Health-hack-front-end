@@ -3,8 +3,9 @@
 	font-size:3em;
 }
 </style>
+
 <div>
-	<img src="http://placekitten.com/980/600">
+	<canvas id="myChart" class="chart chart-line" chart-data="vm.data" chart-labels="vm.labels" chart-options="vm.options" chart-dataset-override="vm.override" width="980" height="600"></canvas>
 </div>
 
 <div class="question col-xs-12">
@@ -18,5 +19,3 @@
 	<h1>What could be improved?</h1>
 	<textarea class="form-control" name="negatives" rows="5" cols="80"></textarea>
 </div>
-
-
