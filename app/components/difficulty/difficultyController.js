@@ -11,9 +11,9 @@
                 green: false,
                 icon: "fa fa-circle",
                 options: [
-                    "Diet - Eat a low salt diet at home",
-                    "Exercise - Walk an additional 10 minutes in your day",
-                    "Stress - Regular breathing exercises"
+                    "Take daily blood pressure reading",
+                    "Walk an additional 10 minutes in your day",
+                    "Regular breathing exercises"
                 ]
             },
             {
@@ -22,9 +22,9 @@
                 green: true,
                 icon: "fa fa-square",
                 options: [
-                    "Diet - Increase potassium in your daily intake",
-                    "Exercise - 15 minutes of moderate physical activity",
-                    "Stress - Regular positive self-coaching/self-talk"
+                    "Eat a low salt diet at home",
+                    "15 minutes of moderate physical activity",
+                    "Regular positive self-coaching/self-talk"
                 ]
             },
             {
@@ -33,9 +33,9 @@
                 green: false,
                 icon: "fa fa-diamond",
                 options: [
-                    "Diet - Eat small portions every three to four hours",
-                    "Exercise - 30 minutes of vigorous physical activity",
-                    "Stress - Regular 10 minute meditation breaks"
+                    "Eat small portions every three to four hours",
+                    "30 minutes of vigorous physical activity",
+                    "Regular 10 minute meditation breaks"
                 ]
             },
         ]
