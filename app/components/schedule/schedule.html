@@ -1,0 +1,30 @@
+<style>
+ .button {
+ 	font-size:3em;
+ 	padding: 20px 30px;
+ 	display: flex;
+ 	justify-content:center;
+ 	border: 1px solid #e4e5e5;
+ 	border-radius: 5px;
+ 	width:100%;
+ }
+ .button-container{
+ 	display:flex;
+ 	justify-content:center;
+ }
+ .button.selected{
+ 	background-color:green;
+ }
+</style>
+<div>
+<h1>WHEN?</h1>
+</div>
+<div class="col-xs-12 button-container">
+  <div class="button" ng-class="{'selected': vm.monday}" ng-click="vm.monday = !vm.monday">M</div>
+  <div class="button" ng-class="{'selected': vm.tuesday}" ng-click="vm.tuesday = !vm.tuesday">T</div>
+  <div class="button" ng-class="{'selected': vm.wednesday}" ng-click="vm.wednesday = !vm.wednesday">W</div>
+  <div class="button" ng-class="{'selected': vm.thursday}" ng-click="vm.thursday = !vm.thursday">Th</div>
+  <div class="button" ng-class="{'selected': vm.friday}" ng-click="vm.friday = !vm.friday">F</div>
+  <div class="button" ng-class="{'selected': vm.saturday}" ng-click="vm.saturday = !vm.saturday">S</div>
+  <div class="button" ng-class="{'selected': vm.sunday}" ng-click="vm.sunday = !vm.sunday">Su</div>
+</div>

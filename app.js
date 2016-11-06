@@ -14,15 +14,20 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'app/components/goal/goal.html',
             controller: 'goalController as vm'
     })
+    .state('signup.category', {
+            url: '/category',
+            templateUrl: 'app/components/category/category.html',
+            controller: 'categoryController as vm'
+    })
     .state('signup.motivation', {
             url: '/motivation',
             templateUrl: 'app/components/motivation/motivation.html',
             controller: 'motivationController as vm'
     })
-    .state('signup.category', {
-            url: '/category',
-            templateUrl: 'app/components/category/category.html',
-            controller: 'categoryController as vm'
+    .state('signup.subcategory', {
+            url: '/subcategory',
+            templateUrl: 'app/components/subcategory/subcategory.html',
+            controller: 'subcategoryController as vm'
     })
     .state('signup.difficulty', {
             url: '/difficulty',
