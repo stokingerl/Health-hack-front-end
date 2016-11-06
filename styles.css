@@ -1,14 +1,21 @@
 .goal-selection-container {
   width: 100%;
-  text-align:center
 }
 
 .goal-selection-container a{
-  width: 800px;
-  height: 250px;
+  width: 320px;
+  height: 200px;
   margin: 20px 20px;
+  font-size: 3.5em;
+  padding-top: 65px;
+  border-radius: 8px;
 }
 
+.signup-title{
+  font-size: 5em;
+  padding-left: 170px;
+  margin: 20px 0 20px 0;
+}
 
 .app-header {
 	background-color: #828282;
