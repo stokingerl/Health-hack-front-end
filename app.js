@@ -6,8 +6,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('signup', {
             url: '/signup',
-            templateUrl: 'app/components/goal/goal.html',
-            controller: 'goalController as vm'
+            templateUrl: 'app/components/signup/signup.html',
+            controller: 'signupController as vm'
     })
     .state('signup.goal', {
             url: '/goal',
