@@ -1,0 +1,21 @@
+<div>
+    <h1 class="text-center">{{vm.constants.headerText}}</h1>
+    <ul class="list-group">
+        <li ng-repeat="category in vm.constants.categoryInfo" class="list-group-item">
+            <i ng-class="category.icon" aria-hidden="true"></i> {{category.name}}
+            <ul class="list-group">
+                <li ng-repeat="option in category.options" class="list-group-item">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            {{option}}
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="text-center">
+        <button class="btn btn-default">Next</button>
+    </div>
+</div>
