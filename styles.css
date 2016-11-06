@@ -1,4 +1,10 @@
-.goal-selection-container button{
-  width: 200px;
-  height: 75px;
+.goal-selection-container {
+  width: 100%;
+  text-align:center
+}
+
+.goal-selection-container a{
+  width: 800px;
+  height: 250px;
+  margin: 20px 20px;
 }

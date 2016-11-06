@@ -1,6 +1,6 @@
 /*  ng-view Animation  */
 .view-slide-in.ng-enter {
-  transition: all 1s ease;
+  transition: all 2s ease;
   -webkit-transition:all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
