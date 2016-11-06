@@ -1,19 +1,24 @@
 <div class="container">
     <div class="row">
-        <div class="text-center col-xs-8">
+        <div>
+            <img class="img-responsive img-circle" style='margin-left: 130px; ' src="http://www.carneyandgood.com/uploads/girl-smiling.jpg"/>
+        </div>
+        <div class='life-goal-section'>
             <div>
                 {{vm.constants.lifeGoal}}
             </div>
-            <div>
+            <div  style='margin-top: 20px;'>
                 {{vm.constants.concreteGoal}}
             </div>
         </div>
-        <div class="col-xs-4">
-            <img class="img-responsive img-circle" src="http://www.carneyandgood.com/uploads/girl-smiling.jpg"/>
-        </div>
     </div>
     <div>
+
+    </div>
+    <div>
+      <span class='macro-goal-section'>
         <strong>{{vm.constants.microLabel}}</strong>
+      </span>
         <hr/>
         <ul class="list-group">
             <li ng-repeat="actionText in vm.constants.actionText" class="list-group-item">
