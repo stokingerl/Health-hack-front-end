@@ -4,7 +4,7 @@
     }
 </style>
 <div>
-    <h1 style="font-size:3.7em;margin-bottom:30px;" class="text-center">{{vm.constants.headerText}}</h1>
+    <h1 class='signup-title'>{{vm.constants.headerText}}</h1>
     <ul class="list-group">
         <li ng-repeat="category in vm.constants.categoryInfo" class="list-group-item">
             <div style="text-align:center;font-size:50px;" ng-class="{rowblue:category.blue,rowgreen:category.green,rowpurple:category.purple}">&nbsp;</div>
@@ -21,6 +21,6 @@
         </li>
     </ul>
     <div class="text-center">
-        <button style="width:80%;height:90px;font-size:40px;font-weight:bold;" class="btn btn-primary">Next</button>
+        <button style="width:80%;height:90px;font-size:40px;font-weight:bold; margin-bottom: 100px;" class="btn btn-primary" ui-sref="signup.impediments">Next</button>
     </div>
 </div>

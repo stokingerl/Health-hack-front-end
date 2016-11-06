@@ -1,8 +1,9 @@
-<div class="container">
-    <h1 class="text-center">{{vm.constants.headerText}}</div>
-    <div class="row">
-        <button ng-repeat="button in vm.buttons" class="col-xs-4 btn btn-default" ng-class="{'active':button.active}" ng-click="vm.setActiveVal(button)">
-            {{button.val}}
-        </button>
+<div>
+    <h1 class="signup-title">{{vm.constants.headerText}}</div>
+    <div class="goal-selection-container">
+        <a type="button" ui-sref="signup.schedule" class="btn btn-primary" style="margin-left: 85px;">No time</a>
+        <a type="button" ui-sref="signup.schedule" class="btn btn-primary" style="margin-left: 85px;">something</a>
+        <a type="button" ui-sref="signup.schedule" class="btn btn-primary" style="margin-left: 85px;">something</a>
+        <a type="button" ui-sref="signup.schedule" class="btn btn-primary" style="margin-left: 85px;">something</a>
     </div>
 </div>

@@ -2,7 +2,7 @@
     var app = angular.module('routerApp');
 
     var constants = {
-        headerText: "Choose one or two items to get started",
+        headerText: "Choose one or two items to get started:",
         categoryInfo:
         [
             {
